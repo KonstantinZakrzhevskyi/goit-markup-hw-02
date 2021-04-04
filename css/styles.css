@@ -15,12 +15,14 @@
   --accent-color: #2196f3;
   --premari-white-color: #ffffff;
   --secondary-bg-color: #f5f4fa;
-  --link-color: rgba(255, 255, 255, 0.6);
+  --secondary-text-color: rgba(255, 255, 255, 0.6);
   --third-bg-color: #2f303a;
 }
 body {
   background-color: var(--premari-white-color);
   color: var(--primari-text-color);
+  font-family: roboto, sans-serif;
+  letter-spacing: 0, 03em;
 }
 
 .logo,
@@ -38,6 +40,9 @@ ul {
 
 .logo {
   color: var(--title-text-color);
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 1.19;
 }
 
 .accent {
@@ -47,6 +52,10 @@ ul {
 /* site-nav */
 .site-nav .link {
   color: var(--subtitle-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .logo:hover,
@@ -63,6 +72,10 @@ ul {
 /* auth-nav */
 .auth-nav .link {
   color: var(--primari-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
 }
 
 .auth-nav .link:hover,
@@ -79,14 +92,24 @@ ul {
 .hero {
   background-color: var(--third-bg-color);
 }
+
 .hero-title {
   color: var(--premari-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 /* button */
 .button {
   color: var(--premari-white-color);
   background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
 }
 
 .button.primary {
@@ -119,6 +142,9 @@ ul {
 
 .footer-logo {
   color: var(--premari-white-color);
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 1.19;
 }
 
 .footer-text {
@@ -126,7 +152,7 @@ ul {
 }
 
 .footer-link {
-  color: var(--link-color);
+  color: var(--secondary-text-color);
 }
 
 /* portfolio */
@@ -147,6 +173,7 @@ ul {
 /* project */
 .project-subtitle {
   color: var(--subtitle-text-color);
+  letter-spacing: 0, 06em;
 }
 
 .project-text {
