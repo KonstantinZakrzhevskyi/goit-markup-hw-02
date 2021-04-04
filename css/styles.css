@@ -13,9 +13,13 @@
   --title-text-color: #000000;
   --subtitle-text-color: #212121;
   --accent-color: #2196f3;
+  --premari-white-color: #ffffff;
+  --secondary-bg-color: #f5f4fa;
+  --link-color: rgba(255, 255, 255, 0.6);
+  --third-bg-color: #2f303a;
 }
 body {
-  background-color: #ffffff;
+  background-color: var(--premari-white-color);
   color: var(--primari-text-color);
 }
 
@@ -42,11 +46,17 @@ ul {
 
 /* site-nav */
 .site-nav .link {
-  color: #212121;
+  color: var(--subtitle-text-color);
 }
 
+.logo:hover,
+.logo:focus,
 .site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav .link:focus,
+.footer-logo:hover,
+.footer-logo:focus,
+.footer-link:hover,
+.footer-link:focus {
   color: var(--accent-color);
 }
 
@@ -56,8 +66,32 @@ ul {
 }
 
 .auth-nav .link:hover,
-.auth-nav .link:focus {
+.auth-nav .link:focus,
+.footer {
   color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+/* hero */
+.hero {
+  background-color: var(--third-bg-color);
+}
+.hero-title {
+  color: var(--premari-white-color);
+}
+
+/* button */
+.button {
+  color: var(--premari-white-color);
+  background-color: var(--accent-color);
+}
+
+.button.primary {
+  color: var(--premari-white-color);
+  background-color: var(--accent-color);
 }
 
 /* section */
@@ -69,6 +103,10 @@ ul {
   color: var(--subtitle-text-color);
 }
 
+.section.team {
+  background-color: var(--secondary-bg-color);
+}
+
 /* features */
 .features {
   color: var(--subtitle-text-color);
@@ -76,22 +114,35 @@ ul {
 
 /* footer */
 .footer {
-  background-color: #2f303a;
+  background-color: var(--third-bg-color);
 }
 
 .footer-logo {
-  color: #ffffff;
+  color: var(--premari-white-color);
 }
 
 .footer-text {
-  color: #ffffff;
+  color: var(--premari-white-color);
 }
 
 .footer-link {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--link-color);
 }
 
 /* portfolio */
+
+/* button */
+.button.secondary {
+  color: var(--subtitle-text-color);
+  background-color: var(--secondary-bg-color);
+  border-color: transparent;
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
+  color: var(--premari-white-color);
+  background-color: var(--accent-color);
+}
 
 /* project */
 .project-subtitle {
