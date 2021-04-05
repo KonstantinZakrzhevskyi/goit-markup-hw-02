@@ -8,6 +8,7 @@
 /* вторичный цвет текста #FFFFFF */
 /* акцент #2196F3 */
 /* футер вторичный цвет текста rgba(255, 255, 255, 0.6) */
+
 :root {
   --primari-text-color: #757575;
   --title-text-color: #000000;
@@ -27,7 +28,6 @@ body {
 
 .logo,
 .link,
-.footer-logo,
 .footer-text,
 .footer-link,
 .project-link {
@@ -62,8 +62,6 @@ ul {
 .logo:focus,
 .site-nav .link:hover,
 .site-nav .link:focus,
-.footer-logo:hover,
-.footer-logo:focus,
 .footer-link:hover,
 .footer-link:focus {
   color: var(--accent-color);
@@ -140,11 +138,8 @@ ul {
   background-color: var(--third-bg-color);
 }
 
-.footer-logo {
+.accent-secondary {
   color: var(--premari-white-color);
-  font-family: Raleway;
-  font-size: 26px;
-  line-height: 1.19;
 }
 
 .footer-text {
