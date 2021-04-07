@@ -58,10 +58,10 @@ ul {
   letter-spacing: 0.02em;
 }
 
-.logo:hover,
-.logo:focus,
 .site-nav .link:hover,
 .site-nav .link:focus,
+.auth-nav .link:hover,
+.auth-nav .link:focus,
 .footer-link:hover,
 .footer-link:focus {
   color: var(--accent-color);
@@ -74,12 +74,6 @@ ul {
   font-size: 14px;
   line-height: 1.4;
   letter-spacing: 0.02em;
-}
-
-.auth-nav .link:hover,
-.auth-nav .link:focus,
-.footer {
-  color: var(--accent-color);
 }
 
 .site-nav .link.current {
@@ -110,10 +104,10 @@ ul {
   line-height: 1.88;
 }
 
-.button.primary {
+/* .button.primary {
   color: var(--premari-white-color);
   background-color: var(--accent-color);
-}
+} */
 
 /* section */
 .section-title {
